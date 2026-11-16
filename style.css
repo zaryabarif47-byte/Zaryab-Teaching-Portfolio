@@ -1793,3 +1793,60 @@ body {
         font-size: 14px;
     }
 }
+
+/* Highlighted WhatsApp contact number */
+.whatsapp-number {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    padding: 12px 20px;
+    background: #e9f9ef;
+    color: #128c4a;
+    border: 1px solid #bce8cd;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.whatsapp-number:hover {
+    background: #128c4a;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.whatsapp-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-icon svg {
+    width: 23px;
+    height: 23px;
+}
+
+/* Floating WhatsApp circle */
+.whatsapp-float {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #25D366;
+    color: #ffffff;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.18);
+    transition: 0.3s ease;
+}
+
+.whatsapp-float svg {
+    width: 32px;
+    height: 32px;
+}
+
+.whatsapp-float:hover {
+    background: #128C4A;
+    transform: scale(1.08);
+}
