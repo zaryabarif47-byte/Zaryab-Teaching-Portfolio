@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Feedback | Zaryab Arif</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .feedback-page {
+            min-height: 100vh;
+            padding: 55px 20px;
+            background: #f4f7fc;
+        }
+
+        .feedback-wrapper {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .feedback-back {
+            display: inline-block;
+            margin-bottom: 25px;
+            color: #2457d6;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .feedback-card {
+            background: #ffffff;
+            padding: 38px;
+            border-radius: 18px;
+            box-shadow: 0 12px 40px rgba(20, 45, 90, 0.08);
+        }
+
+        .feedback-card h1 {
+            color: #14264b;
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .feedback-card .feedback-intro {
+            color: #64748b;
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+        .feedback-field {
+            margin-bottom: 21px;
+        }
+
+        .feedback-field label {
+            display: block;
+            margin-bottom: 9px;
+            color: #243653;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .feedback-field input,
+        .feedback-field select,
+        .feedback-field textarea {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1px solid #d7dfec;
+            border-radius: 9px;
+            font: inherit;
+            font-size: 15px;
+            color: #243653;
+            background: #fff;
+        }
+
+        .feedback-field textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .feedback-field input:focus,
+        .feedback-field select:focus,
+        .feedback-field textarea:focus {
+            outline: none;
+            border-color: #2457d6;
+            box-shadow: 0 0 0 3px rgba(36, 87, 214, 0.10);
+        }
+
+        .feedback-consent {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 8px 0 24px;
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .feedback-consent input {
+            margin-top: 4px;
+        }
+
+        .feedback-submit {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            font: inherit;
+        }
+
+        .feedback-note {
+            margin-top: 18px;
+            color: #718096;
+            font-size: 13px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .feedback-page {
+                padding: 30px 15px;
+            }
+
+            .feedback-card {
+                padding: 25px 20px;
+            }
+
+            .feedback-card h1 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="feedback-page">
+        <div class="feedback-wrapper">
+
+            <a href="index.html" class="feedback-back">
+                ← Back to Portfolio
+            </a>
+
+            <section class="feedback-card">
+
+                <h1>Share Your Feedback</h1>
+
+                <p class="feedback-intro">
+                    Your feedback helps me improve my teaching and provide
+                    a better learning experience. I would appreciate hearing
+                    about your experience.
+                </p>
+
+                <form id="feedbackForm">
+
+                    <div class="feedback-field">
+                        <label for="feedbackName">Your Name</label>
+                        <input
+                            type="text"
+                            id="feedbackName"
+                            placeholder="Enter your name"
+                            required>
+                    </div>
+
+                    <div class="feedback-field">
+                        <label for="feedbackSubject">Subject You Studied</label>
+                        <select id="feedbackSubject" required>
+                            <option value="">Select a subject</option>
+                            <option>Computer Science</option>
+                            <option>Mathematics</option>
+                            <option>Physics</option>
+                            <option>English</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="feedback-field">
+                        <label for="feedbackRating">How would you rate your learning experience?</label>
+                        <select id="feedbackRating" required>
+                            <option value="">Select your rating</option>
+                            <option value="5 - Excellent">5 - Excellent</option>
+                            <option value="4 - Very Good">4 - Very Good</option>
+                            <option value="3 - Good">3 - Good</option>
+                            <option value="2 - Fair">2 - Fair</option>
+                            <option value="1 - Needs Improvement">1 - Needs Improvement</option>
+                        </select>
+                    </div>
+
+                    <div class="feedback-field">
+                        <label for="feedbackMessage">Your Feedback</label>
+                        <textarea
+                            id="feedbackMessage"
+                            placeholder="Tell me about your learning experience..."
+                            required></textarea>
+                    </div>
+
+                    <label class="feedback-consent">
+                        <input type="checkbox" id="feedbackPermission">
+                        <span>
+                            I give permission for my feedback to be displayed
+                            on the tutor portfolio website. My feedback may
+                            otherwise be kept private.
+                        </span>
+                    </label>
+
+                    <button type="submit" class="btn btn-primary feedback-submit">
+                        Submit Feedback →
+                    </button>
+
+                </form>
+
+                <p class="feedback-note">
+                    Your feedback will open in WhatsApp so you can review
+                    and send it directly.
+                </p>
+
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
